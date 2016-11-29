@@ -2,28 +2,62 @@
 <html>
 
 <head>
- 	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>New Tab</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    
-</head>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"></head>
 
 <body>
-    <div id ="lichess-frame">
-        <!-- <script src="https://en.lichess.org/embed?w=1016&h=650"></script> -->
+    <div class='main'>
+        <div class='main2'>
+            <div class='s1'>
+                <iframe src='https://ru.lichess.org/tv/frame?bg=light&theme=metal&embed=" + document.domain + "' class='lichess-tv-iframe' allowtransparency='true' frameBorder='0' 
+                style='width: 224px; height: 264px;' 
+                title='Lichess free online chess'></iframe>
 
-        <iframe src='https://ru.lichess.org/tv/frame?bg=light&theme=brown&embed=" + document.domain + "' class='lichess-tv-iframe' allowtransparency='true' frameBorder='0' style='width: 224px; height: 264px;' title='Lichess free online chess'></iframe>
+                <iframe src='https://en.lichess.org/training/frame?bg=auto&theme=metal&embed=" + document.domain + "' 
+                class='lichess-train-iframe' allowtransparency='true' frameBorder='0' 
+                style='width: 224px; height: 264px;' title='Lichess free online chess'></iframe>
 
-        <iframe src='https://en.lichess.org/training/frame?bg=auto&theme=auto&embed' class='lichess-tv-iframe' allowtransparency='true' frameBorder='0' style='width: 224px; height: 264px;' title='Lichess free online chess'></iframe>
-    </div>    
+            </div>
+            <div class='shr'></div>
+            <div class='s2'>
+                
+            </div>
 
-    <div id="app"></div>
-
+        </div>
+    </div>
+    <script src="../js/jquery-3.1.1.min.js"></script>
     <script src="../js/index.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </body>
 
 </html>
+
+
+<!-- 
+            <div style="overflow: hidden; margin: 15px auto; max-width: 460px;">
+                <iframe scrolling="no" 
+                src="https://en.lichess.org/@/OwnOwn/embed? " 
+           
+                style="border: 0px none; margin-left: -211px; height: 445px; margin-top: -160px; width: 672px;"
+
+                class="ifm", id ='ifm'>
+      
+                </iframe>
+            </div> 
+            
+
+            <iframe src='https://en.lichess.org/training/frame?bg=auto&theme=auto&embed' class='lichess-tv-iframe' allowtransparency='true' frameBorder='0' style='width: 224px; height: 264px;' title='Lichess free online chess'></iframe>
+
+            <div class="app">
+                <div class="lichess-frame">
+                <iframe src='https://ru.lichess.org/tv/frame?bg=light&theme=brown&embed=" + document.domain + "' class='lichess-tv-iframe' allowtransparency='true' frameBorder='0' 
+                style='width: 224px; height: 264px;' 
+                title='Lichess free online chess'></iframe>
+        </div>  
+    </div>
+
+
+--> 
