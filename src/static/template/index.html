@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ 	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>New Tab</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="static/css/style.css">
+    
+</head>
+
+<body>
+    <div id ="lichess-frame">
+        <!-- <script src="https://en.lichess.org/embed?w=1016&h=650"></script> -->
+
+        <iframe src='https://ru.lichess.org/tv/frame?bg=light&theme=brown&embed=" + document.domain + "' class='lichess-tv-iframe' allowtransparency='true' frameBorder='0' style='width: 224px; height: 264px;' title='Lichess free online chess'></iframe>
+
+        <iframe src='https://en.lichess.org/training/frame?bg=auto&theme=auto&embed' class='lichess-tv-iframe' allowtransparency='true' frameBorder='0' style='width: 224px; height: 264px;' title='Lichess free online chess'></iframe>
+    </div>    
+
+    <div id="app"></div>
+
+    <script src="static/js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+</body>
+
+</html>
