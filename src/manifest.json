@@ -3,11 +3,26 @@
 
    "background": {
       "persistent": false,
-      "scripts": [ "static/js/background.js" ]
+      "scripts": ["static/js/jquery-3.1.1.min.js", "static/js/background.js" ]
    },
    "chrome_url_overrides": {
       "newtab": "static/template/index.html"
    },
+
+   "permissions": [
+    "https://en.lichess.org/*" 
+   ],
+
+   "content_scripts": [
+    {
+      "matches": ["https://en.lichess.org/*"],
+      "css": ["static/css/styles.css"],
+      "js": ["static/js/jquery-3.1.1.min.js"]
+    }
+  ],
+            
+
+   "content_security_policy": "script-src 'self' https://en.lichess.org; object-src 'self'", 
    "description": "Replace Chrome new tab page by Lichess TV, yourating & other usefull stuff",
    "icons": {
       "16": "static/icon/16x16.png",
