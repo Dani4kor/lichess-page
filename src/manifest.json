@@ -7,6 +7,7 @@
    "chrome_url_overrides": {
       "newtab": "static/template/index.html"
    },
+
    "options_page": "static/template/options.html",
    "description": "Replace Chrome new tab page by Lichess TV, yourating & other usefull stuff",
    "icons": {
@@ -18,7 +19,8 @@
    "manifest_version": 2,
    "name": "Lichess page",
    "offline_enabled": true,
-   "version": "0.0.1",
+   "version": "0.0.2",
+   "content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
    "permissions": [
     "tabs",
     "storage",
