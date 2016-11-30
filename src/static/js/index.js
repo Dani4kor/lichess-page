@@ -101,8 +101,6 @@
                     document.getElementById("inf").remove()
                 },
                 success: function(data) {
-                    console.log(JSON.stringify(data));
-
                     JSON.parse(localStorage.getItem('user'))
                     document.getElementById("inf").innerHTML = datahtml
                     localStorage.setItem('user', JSON.stringify(data))
