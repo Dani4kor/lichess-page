@@ -8,7 +8,7 @@ Replace Chrome new tab page by Lichess TV, your rating & other usefull stuff!
 ## Usage
 - install [Extension](https://chrome.google.com/webstore/detail/lichess-page/mckbhoccfkhafmkeiemcgoobfjplndin)
 - Open extension Option-> right click on extension icon-> options
-- Submit your Lichess nickname in form https://en.lichess.org/@/**OwnOwn**
+- Submit your Lichess nickname in form https://en.lichess.org/@/__OwnOwn__
 
 # Roadmap
 - fork it!
