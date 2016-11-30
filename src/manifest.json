@@ -4,17 +4,10 @@
       "scripts": ["static/js/jquery-3.1.1.min.js", "static/js/background.js" ]
 
    },
-
-   
-
    "chrome_url_overrides": {
       "newtab": "static/template/index.html"
    },
-
-   
    "options_page": "static/template/options.html",
-   
-
    "description": "Replace Chrome new tab page by Lichess TV, yourating & other usefull stuff",
    "icons": {
       "16": "static/icon/16x16.png",
