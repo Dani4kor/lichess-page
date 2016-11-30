@@ -3,7 +3,7 @@
 
 Replace Chrome new tab page by Lichess TV, your rating & other usefull stuff!
 
-![example](/example.png?raw=true "")
+![example](/src/rsz_example-full.png?raw=true "")
 
 ## Usage
 - install [Extension](https://chrome.google.com/webstore/detail/lichess-page/mckbhoccfkhafmkeiemcgoobfjplndin)
