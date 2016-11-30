@@ -3,6 +3,7 @@
 
 Replace Chrome new tab page by Lichess TV, your rating & other usefull stuff!
 
+
 ![example](/src/rsz_example-full.png?raw=true "")
 
 
@@ -13,6 +14,7 @@ Replace Chrome new tab page by Lichess TV, your rating & other usefull stuff!
 - Submit your Lichess nickname in form https://en.lichess.org/@/OwnOwn
 
 ## Information
+To evade IP ban and multiple requests - request occurs in the gap 20 seconds after page load, old data display across localstorage.
 
 ## Roadmap
 - Fork it!
