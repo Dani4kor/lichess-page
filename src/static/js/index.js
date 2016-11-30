@@ -64,7 +64,6 @@
         }
     }
     if (document.getElementById("inf")) {
-        console.log('OK')
         document.getElementById("inf").innerHTML = datahtml
     }
 
