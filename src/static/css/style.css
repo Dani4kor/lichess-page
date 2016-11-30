@@ -12,7 +12,7 @@ html, body {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   width: 100%;
-  height: 100%;
+  height: 85%;
   overflow: hidden;
   border: none;
   font: normal 16px/1 "Times New Roman", Times, serif;
@@ -29,7 +29,7 @@ html, body {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
   width: 100%;
-  height: 80%;
+  height: 100%;
   position: relative;
   top: 10%;
   right: 0%;
@@ -38,7 +38,7 @@ html, body {
   overflow: hidden;
   border: none;
   font: normal 16px/1 "Times New Roman", Times, serif;
-  color: rgba(255,255,255,1);
+  color: #000
   text-align: center;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
@@ -67,6 +67,25 @@ html, body {
 
 }
 
+.user{
+	display: block;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 35%;
+  height: 100%;
+  overflow: hidden;
+
+  border: none;
+  float: right;
+  font: normal 16px/1 "Times New Roman", Times, serif;
+  color: #000;
+  text-align: left;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: #eee; /*#0199d9*/                   
+
+}
 
 .s-left {
   display: block;
@@ -76,11 +95,12 @@ html, body {
   width: 39%;
   height: 100%;
   overflow: hidden;
+
   border: none;
   float: left;
   font: normal 16px/1 "Times New Roman", Times, serif;
   color: #000;
-  text-align: left;
+  text-align: right;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
   background: #eee; /*#0199d9*/                   
@@ -144,249 +164,30 @@ html, body {
 
 p{
 	margin: auto;
+	display: inline-block;
+	vertical-align: middle;
+	font: normal 16px/1 Impact, Charcoal, sans-serif;
+	text-indent: 5px;
+	padding-bottom: 10px;
+	padding-top: 10px;
 
 }
-.stat-1{
+
+
+
+
+
+#rating-antichess, #rating-kingOfTheHill, #rating-threeCheck, #rating-correspondence,#rating-atomic, #rating-racingKings, #rating-blitz, #rating-bullet, #rating-horde, #rating-puzzle, #rating-classical, #rating-crazyhouse, #rating-blitz, #rating-chess960{
+	float: right;
+	padding-right: 15px;
+}
+
+
+.inf{
 	display: block;
 	padding-bottom: 5px;
 }
 
-.stat {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  width: 50%;
-  display: inline-block;
-  padding-top: 15%;
-  padding-bottom: 8%;
-  overflow: hidden;
-  border: none;
-  text-align: center;
-  
-  text-indent: 40px;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  background: #eee;
-  
-}
-
-.stat1{
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  width: 50%;
-  display: inline-block;
-  padding-top: 15%;
-  padding-bottom: 8%;
-  overflow: hidden;
-  border: none;
-  
-  text-indent: 40px;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  background: #eee;
-  float: right;
-  text-align: center;
-  
-}
-
-.stat2{
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  width: 50%;
-  padding-bottom: 8%;
-  display: inline-block;
-  overflow: hidden;
-  border: none;
-  font: normal 16px/1 Impact, Charcoal, sans-serif;
-  color: rgba(0,0,0,1);
-  text-indent: 40px;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  background: #eee;
-  text-shadow: 0 0 20px rgba(255,255,255, 0.5) ;
-  text-align: center;
-}
-
-
-.stat3{
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  width: 50%;
-  display: inline-block;
-  padding-bottom: 8%;
-  overflow: hidden;
-  border: none;
-  font: normal 16px/1 Impact, Charcoal, sans-serif;
-  color: rgba(0,0,0,1);
-  text-indent: 40px;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  background: #eee;
-  float: right;
-  text-shadow: 0 0 20px rgba(255,255,255, 0.5) ;
-  text-align: center;
-}
-
-.stat4{
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  width: 50%;
-  padding-bottom: 8%;
-  display: inline-block;
-  
-  overflow: hidden;
-  border: none;
-  font: normal 16px/1 Impact, Charcoal, sans-serif;
-  color: rgba(0,0,0,1);
-  text-indent: 40px;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  background: #eee;
-  text-shadow: 0 0 20px rgba(255,255,255, 0.5) ;
-  text-align: center;
-}
-
-
-.stat5{
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  width: 50%;
-  display: inline-block;
-  text-align: center;
-  padding-bottom: 8%;
-  overflow: hidden;
-  border: none;
-  font: normal 16px/1 Impact, Charcoal, sans-serif;
-  color: rgba(0,0,0,1);
-  text-indent: 40px;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  background: #eee;
-  float: right;
-  text-shadow: 0 0 20px rgba(255,255,255, 0.5) ;
-}
-.stat6{
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  width: 50%;
-  padding-bottom: 8%;
-  display: inline-block;
- text-align: center;
-  overflow: hidden;
-  border: none;
-  font: normal 16px/1 Impact, Charcoal, sans-serif;
-  color: rgba(0,0,0,1);
-  text-indent: 40px;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  background: #eee;
-  text-shadow: 0 0 20px rgba(255,255,255, 0.5) ;
-}
-
-
-.stat7{
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  width: 50%;
-  display: inline-block;
- text-align: center;
-  padding-bottom: 8%;
-  overflow: hidden;
-  border: none;
-  font: normal 16px/1 Impact, Charcoal, sans-serif;
-  color: rgba(0,0,0,1);
-  text-indent: 40px;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  background: #eee;
-  float: right;
-  text-shadow: 0 0 20px rgba(255,255,255, 0.5) ;
-}
-.stat8{
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  width: 50%;
-  padding-bottom: 8%;
-  display: inline-block;
-text-align: center;
-  overflow: hidden;
-  border: none;
-  font: normal 16px/1 Impact, Charcoal, sans-serif;
-  color: rgba(0,0,0,1);
-  text-indent: 40px;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  background: #eee;
-  text-shadow: 0 0 20px rgba(255,255,255, 0.5) ;
-}
-
-
-.stat9{
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  width: 50%;
-  display: inline-block;
- text-align: center;
-  padding-bottom: 8%;
-  overflow: hidden;
-  border: none;
-  font: normal 16px/1 Impact, Charcoal, sans-serif;
-  color: rgba(0,0,0,1);
-  text-indent: 40px;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  background: #eee;
-  float: right;
-  text-shadow: 0 0 20px rgba(255,255,255, 0.5) ;
-}
-.stat10{
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  width: 50%;
-  padding-bottom: 8%;
-  display: inline-block;
-text-align: center;
-  overflow: hidden;
-  border: none;
-  font: normal 16px/1 Impact, Charcoal, sans-serif;
-  color: rgba(0,0,0,1);
-  text-indent: 40px;
-  -o-text-overflow: ellipsis;
-  text-overflow: ellipsis;
-  background: #eee;
-  text-shadow: 0 0 20px rgba(255,255,255, 0.5) ;
-}
-
-
-.stat11{
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  width: 50%;
-  display: inline-block;
-text-align: center;
-  padding-bottom: 8%;
-  overflow: hidden;
-  border: none;
-  font: normal 16px/1 Impact, Charcoal, sans-serif;
-  color: rgba(0,0,0,1);
-  text-indent: 40px;
-  -o-text-overflow: ellipsis; 
-  text-overflow: ellipsis;
-  background: #eee;
-  float: right;
-  text-shadow: 0 0 20px rgba(255,255,255, 0.5) ;
-}
 
 
 
