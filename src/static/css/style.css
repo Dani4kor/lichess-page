@@ -20,20 +20,21 @@ html, body {
   text-align: center;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
-  background: #eee;
+  background: #eee; /*d1d802*/
+
 }
 
-.main2 {
+.main-center {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  width: 70%;
-  height: 70%;
+  width: 100%;
+  height: 80%;
   position: relative;
-  top: 15%;
-  right: 15%;
-  bottom: 15%;
-  left: 15%;
+  top: 10%;
+  right: 0%;
+  bottom: 10%;
+  left: 10%;
   overflow: hidden;
   border: none;
   font: normal 16px/1 "Times New Roman", Times, serif;
@@ -41,36 +42,38 @@ html, body {
   text-align: center;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
-  background: #eee;
+  background: #eee; /*49d802*/
+
 }
 
 
 
-.s1 {
+.s-right {
   display: inline-block;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  width: 49%;
+  width: 59%;
   height: 100%;
   overflow: hidden;
   border: none;
   float: right;
   font: normal 16px/1 "Times New Roman", Times, serif;
   color: rgba(255,255,255,1);
-  text-align: center;
+  text-align: left;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
-  background: #eee;
+  background: #eee; #/*0199d9*/
+
 }
 
 
-.s2 {
+.s-left {
   display: inline-block;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  width: 49%;
+  width: 39%;
   height: 100%;
   overflow: hidden;
   border: none;
@@ -80,7 +83,9 @@ html, body {
   text-align: center;
   -o-text-overflow: ellipsis;
   text-overflow: ellipsis;
-  background: #eee;
+  background: #eee; /*#0199d9*/                   
+
+
 }
 
 
@@ -100,4 +105,26 @@ html, body {
   text-overflow: ellipsis;
   background: #000000;
   -webkit-box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+  box-shadow: 1px 1px 1px 0 rgba(0,0,0,0.3) ;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+}
+
+
+
+#scaled-frame {
+    zoom: 2.2;
+    -moz-transform: scale(2.2);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(2.2);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(2.2);
+    -webkit-transform-origin: 0 0;
+    padding: 1%;
+    padding-top: 4.5%;
+
+
+    }
+     
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+#scaled-frame  { zoom: 1;  }
 }
