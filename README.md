@@ -1,3 +1,2 @@
-# src to [lichess-page](https://chrome.google.com/webstore/category/extensions)
+# src to [lichess-page](https://chrome.google.com/webstore/detail/lichess-page/mckbhoccfkhafmkeiemcgoobfjplndin)
 
-in dev
