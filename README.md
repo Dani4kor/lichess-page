@@ -3,7 +3,7 @@
 
 Replace Chrome new tab page by Lichess TV, your rating & other usefull stuff!
 
- <center><img align="center" src="example-page.gif?raw=true " alt="example"></center>
+ <center><img src="example-page.gif?raw=true " alt="example"></center>
 
 
 
