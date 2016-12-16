@@ -150,8 +150,22 @@ body {
 }
 
 #scaled-frame {
+		margin-top: 10%;
+		zoom: 1.00;
+	    -moz-transform: scale(1.55);
+	    -moz-transform-origin: 0 0;
+	    -o-transform: scale(1.55);
+	    -o-transform-origin: 0 0;
+	    -webkit-transform: scale(1.55);
+	    -webkit-transform-origin: 0 0;
+    }
+
+
+
+@media screen and (min-width: 940px) {
+    #scaled-frame {
     margin-top: 10%;
-    zoom: 2.05;
+    zoom: 1.00;
     -moz-transform: scale(2.05);
     -moz-transform-origin: 0 0;
     -o-transform: scale(2.05);
@@ -159,13 +173,8 @@ body {
     -webkit-transform: scale(2.05);
     -webkit-transform-origin: 0 0;
 }
-
-/*@media screen and (min-width: 480px) {
-    #scaled-frame {
-        zoom: 1;
-    }
 }
-*/
+
 #rating-name {
     font: normal 16px/1 Impact, Charcoal, sans-serif;
     color: rgba(0, 0, 0, 1);
