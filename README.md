@@ -1,9 +1,10 @@
 # src to [lichess-page](https://chrome.google.com/webstore/detail/lichess-page/mckbhoccfkhafmkeiemcgoobfjplndin)
 
 
-Replace Chrome new tab page by Lichess TV, your rating & other usefull stuff!
+
 
 <p align="center">
+ Replace Chrome new tab page by Lichess TV, your rating & other usefull stuff!
  <img src="example-page.gif?raw=true " alt="example">
 </p>
 
