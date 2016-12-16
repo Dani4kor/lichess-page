@@ -4,7 +4,7 @@
 Replace Chrome new tab page by Lichess TV, your rating & other usefull stuff!
 
 <img align="center" src="example-page.gif?raw=true " alt="example">
-![example](example-page.gif?raw=true "")
+
 
 
 
