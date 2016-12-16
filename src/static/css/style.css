@@ -107,9 +107,8 @@ body {
     text-overflow: ellipsis;
     background: #eee;
     /*#0199d9*/
-
-
 }
+
 .s-left {
     display: block;
     -webkit-box-sizing: content-box;
@@ -151,31 +150,28 @@ body {
 }
 
 #scaled-frame {
-		margin-top: 10%;
-		zoom: 1.00;
-	    -moz-transform: scale(1.55);
-	    -moz-transform-origin: 0 0;
-	    -o-transform: scale(1.55);
-	    -o-transform-origin: 0 0;
-	    -webkit-transform: scale(1.55);
-	    -webkit-transform-origin: 0 0;
-    }
-
-
-
-@media screen and (min-width: 940px) and (min-height:691px){
-    #scaled-frame {
     margin-top: 10%;
     zoom: 1.00;
-    -moz-transform: scale(2.05);
+    -moz-transform: scale(1.55);
     -moz-transform-origin: 0 0;
-    -o-transform: scale(2.05);
+    -o-transform: scale(1.55);
     -o-transform-origin: 0 0;
-    -webkit-transform: scale(2.05);
+    -webkit-transform: scale(1.55);
     -webkit-transform-origin: 0 0;
 }
-}
 
+@media screen and (min-width: 940px) and (min-height:691px) {
+    #scaled-frame {
+        margin-top: 10%;
+        zoom: 1.00;
+        -moz-transform: scale(2.05);
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(2.05);
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(2.05);
+        -webkit-transform-origin: 0 0;
+    }
+}
 
 #rating-name {
     font: normal 16px/1 Impact, Charcoal, sans-serif;
@@ -192,7 +188,6 @@ body {
 p {
     margin: auto;
     display: block;
-
     font: normal 16px/1 Impact, Charcoal, sans-serif;
     text-indent: 5px;
     padding-bottom: 10px;
