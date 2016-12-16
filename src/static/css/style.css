@@ -160,7 +160,7 @@ body {
     -webkit-transform-origin: 0 0;
 }
 
-@media screen and (min-width: 940px) and (min-height:691px) {
+@media screen and (min-width: 940px)  {
     #scaled-frame {
         margin-top: 10%;
         zoom: 1.00;
