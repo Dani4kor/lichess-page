@@ -5,6 +5,7 @@
 
 <p align="center">
  Replace Chrome new tab page by Lichess TV, your rating & other usefull stuff!
+ <br><br>
  <img src="example-page.gif?raw=true " alt="example">
 </p>
 
