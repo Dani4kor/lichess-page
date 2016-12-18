@@ -14,7 +14,7 @@
 ## Usage
 - install [Extension](https://chrome.google.com/webstore/detail/lichess-page/mckbhoccfkhafmkeiemcgoobfjplndin)
 - Open extension Option-> right click on extension icon-> options
-- Submit your Lichess nickname in form https://en.lichess.org/@/OwnOwn
+- Submit your Lichess nickname in form en.lichess.org/@//bOwnOwn/b
 
 ## Information
 To evade IP ban and multiple requests - request occurs in the gap 20 seconds after page load, old data display across localstorage.
