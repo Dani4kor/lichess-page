@@ -32,7 +32,7 @@ iframe {
     -webkit-transform-origin: 0 0;
 }
 
-ul {
+table {
     margin-top: 5%;
     margin-right: 12%;
 }
@@ -64,10 +64,11 @@ ul {
     margin-right: 5px;
 }
 
-li {  list-style-type: none; font-size: 1.3em; }
-li::before {
+tr {  list-style-type: none; font-size: 1.3em; }
+tr::before {
     font-family: "lichess", monospace !important;
     content: attr(data-icon);
+    margin-right: 5px;
 }
 
 

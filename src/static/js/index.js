@@ -1,6 +1,6 @@
 (function() {
     var data;
-    var datahtml = '';
+    var htmlData = '';
     var uniFont = 'T';
 
     function toUnicode(theString) {
@@ -48,43 +48,42 @@
         return uniFont;
     }
 
-    function getListTemplate( key ) {
+    function createTableRow( type ) {
         var html = [];
-        // html.push(
-        //    '<a  class="inf" data-icon="',
-        //     toUnicode(key),
-        //    '"><p id = "number">',
-        //     key,
-        //    ': &nbsp&nbsp&nbsp</p><p id = "rating-',
-        //     key,
-        //    '">',
-        //    JSON.parse(localStorage.getItem("user"))["perfs"][key]["rating"],
-        //    '</p></a>\n'
-        // );
 
         html.push(
-            '<li id="' + key + '" data-icon="' + toUnicode( key ) + '">',
-            '<span class="number">',
-            key,
-            '</span>',
-            '<span class="rating">',
-            JSON.parse(localStorage.getItem("user"))["perfs"][key]["rating"],
-            '</span>',
-            '</li>'
+            '<tr id="' + type + '" data-icon="' + toUnicode( type ) + '">',
+            '<td>',
+                '<span class="number">',
+                type,
+                '</span>',
+            '</td>',
+            '<td>',
+                '<span class="rating">',
+                JSON.parse(localStorage.getItem("user"))["perfs"][type]["rating"],
+                '</span>',
+            '</td>',
+            '</tr>'
         );
 
         return html.join('');
     }
 
     if (JSON.parse(localStorage.getItem('user')) != null) {
-        for (var key in JSON.parse(localStorage.getItem("user"))["perfs"]) {
-            if (JSON.parse(localStorage.getItem("user"))["perfs"][key]['games'] > 1) {
-                datahtml += getListTemplate( key );
+        var gameTypes = JSON.parse(localStorage.getItem("user"))["perfs"];
+
+        for (var type in gameTypes) {
+            if (gameTypes.hasOwnProperty(type)) {
+                var gamesOfTypePlayed = gameTypes[type]['games'];
+
+                if (gamesOfTypePlayed > 1) {
+                    htmlData += createTableRow( type );
+                }
             }
         }
     }
     if (document.getElementById("inf")) {
-        document.getElementById("inf").innerHTML = datahtml
+        document.getElementById("inf").innerHTML = htmlData;
     }
 
     if (document.getElementById("inputname")) {
@@ -124,7 +123,7 @@
                 },
                 success: function(data) {
                     JSON.parse(localStorage.getItem('user'));
-                    document.getElementById("inf").innerHTML = datahtml;
+                    document.getElementById("inf").innerHTML = htmlData;
                     localStorage.setItem('user', JSON.stringify(data));
                 },
                 complete: function() {
