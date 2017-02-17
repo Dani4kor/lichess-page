@@ -6,46 +6,43 @@
     function toUnicode(theString) {
         switch (theString) {
             case 'antichess':
-                uniFont = '@'
+                uniFont = '@';
                 break;
             case 'bullet':
-                uniFont = 'T'
+                uniFont = 'T';
                 break;
             case 'racingKings':
-                uniFont = '&#xe00a;'
+                uniFont = '&#xe00a;';
                 break;
             case 'crazyhouse':
-                uniFont = '&#xe00b;'
+                uniFont = '&#xe00b;';
                 break;
             case 'atomic':
-                uniFont = '>'
+                uniFont = '>';
                 break;
             case 'threeCheck':
-                uniFont = '&#46;'
+                uniFont = '&#46;';
                 break;
             case 'correspondence':
-                uniFont = ';'
+                uniFont = ';';
                 break;
             case 'kingOfTheHill':
-                uniFont = '('
+                uniFont = '(';
                 break;
             case 'blitz':
-                uniFont = ')'
+                uniFont = ')';
                 break;
             case 'classical':
-                uniFont = '+'
+                uniFont = '+';
                 break;
             case 'puzzle':
-                uniFont = '-'
+                uniFont = '-';
                 break;
             case 'horde':
-                uniFont = '_'
-                break;
-            case 'horde':
-                uniFont = "'"
+                uniFont = '_';
                 break;
             case 'chess960':
-                uniFont = "&#39;"
+                uniFont = "&#39;";
                 break;
         }
         return uniFont;
@@ -91,12 +88,11 @@
     }
 
     if (document.getElementById("inputname")) {
-        console.log("options")
+        console.log("options");
         document.addEventListener('DOMContentLoaded', function() {
             var checkPageButton = document.getElementById('submit');
             checkPageButton.addEventListener('click', function() {
-                var data = document.getElementById("inputname").value;
-                localStorage["accName"] = data;
+                localStorage["accName"] = document.getElementById( "inputname" ).value;
                 $(document).ready(function() {
                     $.ajax({
                         url: 'https://en.lichess.org/api/user/' + localStorage["accName"],
@@ -134,28 +130,22 @@
                 complete: function() {
                     $( '#loadingDiv' ).hide();
                     $( '#inf' ).show();
-                },
+                }
             });
         });
     }, Math.floor((Math.random() * 10) + 1)*1000);
 
 
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (function(i,s,o,g,r,a,m){
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function(){ (i[r].q=i[r].q||[]).push(arguments) },
+            i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); // Note: https protocol here
 
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga'); // Note: https protocol here
-
-ga('create', 'UA-XXXXX-YY', 'auto');
-
-ga('set', 'checkProtocolTask', function(){}); // Removes failing protocol check. @see: http://stackoverflow.com/a/22152353/1958200
-
-ga('require', 'displayfeatures');
-
-ga('send', 'pageview', '/options.html');
-
-
-
+    ga('create', 'UA-XXXXX-YY', 'auto');
+    // Removes failing protocol check. @see: http://stackoverflow.com/a/22152353/1958200
+    ga('set', 'checkProtocolTask', function(){});
+    ga('require', 'displayfeatures');
+    ga('send', 'pageview', '/options.html');
 })();
