@@ -7,26 +7,27 @@
     <title>New Tab</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+
+    <script src="../js/jquery-3.1.1.min.js"></script>
+    <script src="../js/index.js"></script>
+
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/loading-animation.css">
 </head>
 
 <body>
-    <div class='main'>
-        <div class='main-center'>
-            <div class='s-right'>
-                <iframe frameborder="0" id="scaled-frame" style="height: 224.0px;" "
-                src="https://ru.lichess.org/tv/frame?bg=light&theme=metal&embed=" + document.domain + "></iframe>
+    <div class='outer'>
+        <div class='centered'>
+            <iframe frameborder="0" src="https://ru.lichess.org/tv/frame?bg=light&theme=metal&embed"></iframe>
+
+            <div id="loadingDiv" class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
             </div>
-            <div class='shr'></div>
-            <div class='s-left'>
-                <div class="user">
-                    <div class="inf" id="inf">
-                    </div>
-                </div>
-            </div>
+
+            <ul id="inf" class="inf"></ul>
         </div>
-        <script src="../js/jquery-3.1.1.min.js"></script>
-        <script src="../js/index.js"></script>
+    </div>
 </body>
 
 </html>

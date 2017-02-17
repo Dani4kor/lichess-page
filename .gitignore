@@ -2,3 +2,4 @@
 *.pem
 *.crx
 *.zip
+.idea/

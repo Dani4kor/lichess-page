@@ -51,15 +51,38 @@
         return uniFont;
     }
 
+    function getListTemplate( key ) {
+        var html = [];
+        // html.push(
+        //    '<a  class="inf" data-icon="',
+        //     toUnicode(key),
+        //    '"><p id = "number">',
+        //     key,
+        //    ': &nbsp&nbsp&nbsp</p><p id = "rating-',
+        //     key,
+        //    '">',
+        //    JSON.parse(localStorage.getItem("user"))["perfs"][key]["rating"],
+        //    '</p></a>\n'
+        // );
+
+        html.push(
+            '<li id="' + key + '" data-icon="' + toUnicode( key ) + '">',
+            '<span class="number">',
+            key,
+            '</span>',
+            '<span class="rating">',
+            JSON.parse(localStorage.getItem("user"))["perfs"][key]["rating"],
+            '</span>',
+            '</li>'
+        );
+
+        return html.join('');
+    }
+
     if (JSON.parse(localStorage.getItem('user')) != null) {
         for (var key in JSON.parse(localStorage.getItem("user"))["perfs"]) {
             if (JSON.parse(localStorage.getItem("user"))["perfs"][key]['games'] > 1) {
-                if (key == 'correspondence') {
-                    var key_short = 'correspond'
-                    datahtml += '<a  class="inf" data-icon="' + toUnicode(key) + '"><p id = "number">' + key_short + ': &nbsp&nbsp&nbsp</p><p id = "rating-' + key + '">' + JSON.parse(localStorage.getItem("user"))["perfs"][key]["rating"] + '</p></a>\n'
-                } else {
-                    datahtml += '<a  class="inf" data-icon="' + toUnicode(key) + '"><p id = "number">' + key + ': &nbsp&nbsp&nbsp</p><p id = "rating-' + key + '">' + JSON.parse(localStorage.getItem("user"))["perfs"][key]["rating"] + '</p></a>\n'
-                }
+                datahtml += getListTemplate( key );
             }
         }
     }
@@ -95,18 +118,23 @@
 
     setTimeout(function wtf() {
         $(document).ready(function() {
+            $( '#inf' ).hide();
             $.ajax({
                 url: 'https://en.lichess.org/api/user/' + localStorage["accName"],
                 dataType: 'json',
                 error: function() {
-                    localStorage.setItem('user', null)
-                    document.getElementById("inf").remove()
+                    localStorage.setItem('user', null);
+                    document.getElementById("inf").remove();
                 },
                 success: function(data) {
-                    JSON.parse(localStorage.getItem('user'))
-                    document.getElementById("inf").innerHTML = datahtml
-                    localStorage.setItem('user', JSON.stringify(data))
-                }
+                    JSON.parse(localStorage.getItem('user'));
+                    document.getElementById("inf").innerHTML = datahtml;
+                    localStorage.setItem('user', JSON.stringify(data));
+                },
+                complete: function() {
+                    $( '#loadingDiv' ).hide();
+                    $( '#inf' ).show();
+                },
             });
         });
     }, Math.floor((Math.random() * 10) + 1)*1000);
